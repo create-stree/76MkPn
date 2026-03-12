@@ -1,4 +1,3 @@
-
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -8,8 +7,6 @@ local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
-
-print("hello world")
 
 local StreeLib = {
     Themes = {
@@ -3594,7 +3591,6 @@ end
 
 task.spawn(function()
     task.wait(2)
-    print("hello world")
     StreeLib:Notify({
         Title = "StreeLib",
         Message = "UI StreeLib Download Completed",
