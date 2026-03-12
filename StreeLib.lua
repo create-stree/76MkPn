@@ -1,4 +1,3 @@
-
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -8,8 +7,7 @@ local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
-
-
+ 
 local StreeLib = {
     Themes = {
         StreeHub = {
@@ -20,7 +18,7 @@ local StreeLib = {
             }),
             ["Color Hub 2"] = Color3.fromRGB(15,15,15),
             ["Color Stroke"] = Color3.fromRGB(0,0,0),
-            ["Color Theme"] = Color3.fromRGB(255,255,0),
+            ["Color Theme"] = Color3.fromRGB(57, 255, 20),
             ["Color Text"] = Color3.fromRGB(255, 255, 255),
             ["Color Dark Text"] = Color3.fromRGB(170, 170, 170),
             ["Color Discord Text"] = Color3.fromRGB(255, 255, 255),
@@ -34,7 +32,7 @@ local StreeLib = {
             ["Color Toggle Knob Off"] = Color3.fromRGB(255, 255, 255),
             ["Color Toggle Border"] = Color3.fromRGB(255, 255, 255),
             ["Border Thickness"] = 1.5,
-            ["UI Border Color"] = Color3.fromRGB(255,255,255),
+            ["UI Border Color"] = Color3.fromRGB(57, 255, 20),
         }
     },
     Info = {
@@ -261,7 +259,7 @@ local GetFlag, SetFlag, CheckFlag do
 end
 
 local ScreenGui = Create("ScreenGui", CoreGui, {
-    Name = "StreeLib v8.1",
+    Name = "StreeLib v1.0",
 }, {
     Create("UIScale", {
         Scale = UIScale,
@@ -3045,7 +3043,7 @@ function StreeLib:MakeWindow(Configs)
         ToggleButton.Name = "ToggleButton"
         ToggleButton.Size = UDim2.new(0, 50, 0, 50)
         ToggleButton.Position = UDim2.new(0.12, 0, 0.12, 0)
-        ToggleButton.Image = "rbxassetid://108449485047823"
+        ToggleButton.Image = "rbxassetid://128806139932217"
         ToggleButton.BackgroundColor3 = Theme["Color Hub 2"]
         ToggleButton.BackgroundTransparency = 0.2
         ToggleButton.Active = true
@@ -3061,10 +3059,10 @@ function StreeLib:MakeWindow(Configs)
         end)
         
         local Flag = Instance.new("ImageLabel")
-        Flag.Name = "VNFlagIcon"
+        Flag.Name = "INAlagIcon"
         Flag.Parent = ToggleButton
         Flag.BackgroundTransparency = 1
-        Flag.Image = "rbxassetid://90723031696932"
+        Flag.Image = "rbxassetid://136169742"
         Flag.Size = UDim2.fromOffset(28, 18)
         Flag.AnchorPoint = Vector2.new(0.5, 0.5)
         Flag.Position = UDim2.new(1, -2, 0, 2)
@@ -3327,7 +3325,7 @@ end
 function StreeLib:Notify(Configs)
     local Title = Configs.Title or Configs[1] or "StreeHub"
     local Message = Configs.Message or Configs[2] or Configs.Text or ""
-    local Icon = Configs.Icon or "rbxassetid://76571437829227"
+    local Icon = Configs.Icon
     local Duration = Configs.Duration or Configs.Time or 5
     
     table.insert(NotificationQueue, {
