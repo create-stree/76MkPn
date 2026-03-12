@@ -539,7 +539,7 @@ function StreeLib:SetTheme(NewTheme)
     if not VerifyTheme(NewTheme) then return end
     
     StreeLib.Save.Theme = NewTheme
-    SaveJson("stree library v8.1.json", StreeLib.Save)
+    SaveJson("stree library v1.0.json", StreeLib.Save)
     
     local OldTheme = Theme
     Theme = StreeLib.Themes[NewTheme]
@@ -3062,7 +3062,7 @@ function StreeLib:MakeWindow(Configs)
         Flag.Name = "INAlagIcon"
         Flag.Parent = ToggleButton
         Flag.BackgroundTransparency = 1
-        Flag.Image = "rbxassetid://136169742"
+        Flag.Image = "rbxassetid://7392785536"
         Flag.Size = UDim2.fromOffset(28, 18)
         Flag.AnchorPoint = Vector2.new(0.5, 0.5)
         Flag.Position = UDim2.new(1, -2, 0, 2)
@@ -3191,7 +3191,7 @@ local function CreateNotification(Icon, Title, Message, Duration)
     IconImage.Size = UDim2.new(1, 0, 1, 0)
     IconImage.BackgroundTransparency = 1
     IconImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    IconImage.Image = Icon or "rbxassetid://76571437829227"
+    IconImage.Image = Icon
     IconImage.ImageColor3 = Color3.fromRGB(255, 255, 255)
     IconImage.ScaleType = Enum.ScaleType.Fit
     IconImage.BorderSizePixel = 0
