@@ -1,6 +1,6 @@
 local version = LRM_ScriptVersion and "v" .. table.concat(LRM_ScriptVersion:split(""), ".") or "Dev Version"
-local natui_url = game:HttpGet("https://raw.githubusercontent.com/create-stree/76MkPn/refs/heads/main/Nat.lua")
-local NatUI = loadstring(natui_url)()
+local ZyphraxHub = game:HttpGet("https://raw.githubusercontent.com/create-stree/76MkPn/refs/heads/main/tes.lua")
+local ZyphraxHub = loadstring(ZyphraxHub)()
 local IsOnMobile = table.find({Enum.Platform.Android, Enum.Platform.IOS}, game:GetService("UserInputService"):GetPlatform())
 local WindowSize = IsOnMobile and UDim2.fromOffset(528, 334) or UDim2.fromOffset(580, 350)
 
