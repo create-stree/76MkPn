@@ -29,7 +29,7 @@ ZyphraxHub["1"]["ResetOnSpawn"] = false;
 local cloneref = cloneref or function(...) return ... end
 
 if protect_gui then
-	protect_gui(NatHub["1"])
+	protect_gui(ZyphraxHub["1"])
 elseif gethui then
 	ZyphraxHub["1"].Parent = gethui()
 elseif pcall(function() game.CoreGui:GetChildren() end) then
