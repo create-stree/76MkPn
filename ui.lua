@@ -1,18 +1,18 @@
 --[[
-______            _                         
-|__  /           | |                        
-  / / _   _ _ __ | |__  _ __ __ ___  __     
- / /  | | | | '_ \| '_ \| '__/ _` \ \/ /     
-/ /__ | |_| | |_) | | | | | | (_| |>  <      
-\____|\__, | .__/|_| |_|_|  \__,_/_/\_\     
-      __/ | |                             
-     |___/|_|
+    ______             _                         
+    |__  /            | |                        
+      / / _   _  _ __ | |__  _ __ __ ___  __     
+     / /  | | | | '_ \| '_ \| '__/ _` \ \/ /     
+    / /__ | |_| | |_) | | | | | | (_| |>  <      
+    \____|\__,| | .__/|_| |_|_|  \__,_/_/\_\     
+          __/ | | |                             
+         |___/  |_|
 
-    Rewrited from Wind UI (Footagesus)
+    Rewrited from Wind UI (Footagesus) and NatUI
     Github: https://github.com/Footagesus/WindUI
 
-	Developed by: .chill.z. (Chillz)
-	Owned by: ardyxz (NatHub)
+	Developed by: Reyhan (Kirsia)
+	Owned by: moonshal (ZyphraxHub)
 
 	This User Interface is open source and for public usage.
 ]]
