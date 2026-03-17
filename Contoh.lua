@@ -1,4 +1,4 @@
--- local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/dy1zn4t/bmF0dWk-/refs/heads/main/ui.lua"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/create-stree/76MkPn/refs/heads/main/Nat.lua"))()
 local Window = require(ZyphraxHub["3e"]):CreateWindow({
 	Title = "ZyphraxHub",
 	Icon = "rbxassetid://113216930555884",
