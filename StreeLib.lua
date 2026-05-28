@@ -286,7 +286,6 @@ local function ConnectSave(Instance, func)
     end)
 end
 
--- ========= PERBAIKAN CreateTween =========
 local function CreateTween(Configs)
     local Instance = Configs[1] or Configs.Instance
     if not Instance or not Instance.Parent then return end
@@ -760,7 +759,7 @@ function StreeLib:MakeWindow(Configs)
         Position = UDim2.new(0, 0, 0.5),
         AnchorPoint = Vector2.new(0, 0.5),
         BackgroundTransparency = 1,
-        Image = "rbxassetid://76571437829227",
+        Image = "rbxassetid://99948086845842",
         ImageColor3 = Theme["Color Text"],
         Name = "MinimizedIcon"
     })
@@ -1317,8 +1316,7 @@ function StreeLib:MakeWindow(Configs)
         table.insert(ContainerList, Container)
         
         if not FirstTab then Container.Parent = Containers end
-        
-        -- Perbaikan Enable/Disable
+
         local function Tabs()
             if Container.Parent then return end
             for _,Frame in pairs(ContainerList) do
@@ -1328,7 +1326,7 @@ function StreeLib:MakeWindow(Configs)
             end
             Container.Parent = Containers
             Container.Size = UDim2.new(1, 0, 1, 150)
-            Container.CanvasPosition = Vector2.new(0, 0) -- reset scroll
+            Container.CanvasPosition = Vector2.new(0, 0)
             for _,Tab in pairs(StreeLib.Tabs) do
                 if Tab.Cont ~= Container then
                     Tab.func:Disable()
